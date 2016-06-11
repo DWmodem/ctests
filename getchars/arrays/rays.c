@@ -23,3 +23,31 @@ int main()
 	}
 	return 0;
 }
+
+int getline(char line[], int maxline)
+{
+	int c, i;
+	i = 0;
+	while (((c = getchar()) != EOF) && (i < maxline)) {
+		line[i] = c;
+		i++;
+		if (c == '\n') {
+			break;
+		}
+	}
+	return i;
+}
+
+void copy(char storeLine[], char newLine[])
+{
+	int c, i;
+	i = 0;
+	do {
+		c = newLine[i];
+		storeLine[i] = c;
+
+	} while ();
+	for(i = 0; newLine[i] != '\n'; i++ ) {
+		storeLine[i] = newLine[i];
+	}
+}
